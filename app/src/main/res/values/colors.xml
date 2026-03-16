@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Original Material colors (keep for compatibility) -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,4 +8,24 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#BDBDBD</color>
+
+    <!-- Discord-style Dark Theme Colors -->
+    <color name="discord_background">#2B2D31</color>
+    <color name="discord_card">#313338</color>
+    <color name="discord_input">#1E1F22</color>
+    <color name="discord_text">#FFFFFF</color>
+    <color name="discord_text_secondary">#B5BAC1</color>
+    <color name="discord_text_muted">#6D6F78</color>
+    <color name="discord_link">#00A8FC</color>
+
+    <!-- App Accent Colors -->
+    <color name="accent_orange">#FB8500</color>
+    <color name="accent_orange_dark">#E07700</color>
+    <color name="charcoal">#495057</color>
+    <color name="charcoal_dark">#343A40</color>
+
+    <!-- Status Colors -->
+    <color name="error_red">#DA373C</color>
+    <color name="sos_red">#D00000</color>
 </resources>

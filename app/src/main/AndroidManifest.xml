@@ -3,12 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.alice.yahahun">
 
-    <!-- 🔧 Optional device feature declarations -->
     <uses-feature android:name="android.hardware.telephony" android:required="false" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />
     <uses-feature android:name="android.hardware.microphone" android:required="false" />
 
-    <!-- ✅ Required permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -31,11 +29,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LocationApp"
         tools:targetApi="31">
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAq9dKmEMN0uD9EycuofLOuFoaeQJOUwpo" />
-        <!-- ✅ Launcher activity: GreetingActivity -->
         <activity
             android:name="com.alice.yahanhun.GreetingActivity"
             android:label="Yahan Hun"
@@ -46,18 +39,14 @@
             </intent-filter>
         </activity>
 
-        <!-- ✅ Used after greeting or if not signed in -->
         <activity android:name="com.alice.yahanhun.LoginActivity" android:exported="true" />
 
-        <!-- ✅ Used during first-time onboarding -->
         <activity android:name="com.alice.yahanhun.InformationActivity" android:exported="true" />
         <activity android:name="com.alice.yahanhun.PasswordActivity" android:exported="true" />
 
-        <!-- ✅ Main map activity -->
         <activity
             android:name="com.alice.yahanhun.HomeActivity"
             android:exported="true">
-            <!-- 🔗 Deep link support -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
